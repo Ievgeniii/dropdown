@@ -1,0 +1,17 @@
+@import "../variables";
+
+.option {
+  &:hover {
+    background-color: $hover-color;
+  }
+
+  .inner {
+    width: 100%;
+    min-height: $option-height;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+}

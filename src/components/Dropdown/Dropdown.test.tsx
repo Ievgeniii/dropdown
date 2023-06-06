@@ -24,7 +24,7 @@ describe('Dropdown test suite', () => {
   });
 
   it('should render selected value in the header if optionIndex is provided', () => {
-    render(<Dropdown {...mockData} optionInitialIndex={0} />);
+    render(<Dropdown {...mockData} optionsInitialIndex={0} />);
 
     const placeholder = screen.queryByText(mockData.emptyStatePlaceholder);
     const option = screen.queryByText(mockData.options[0]);

@@ -1,0 +1,28 @@
+@import "../variables";
+
+.header {
+  position: relative;
+
+  .inner {
+    background-color: $background-color;
+    border: $border-style;
+    border-radius: $border-radius;
+    height: $option-height;
+    cursor: pointer;
+    text-align: left;
+    padding: 10px;
+    width: 100%;
+
+    &--unselected {
+      color: $placeholder-font-color;
+    }
+  }
+
+  .chevron {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    pointer-events: none;
+  }
+}

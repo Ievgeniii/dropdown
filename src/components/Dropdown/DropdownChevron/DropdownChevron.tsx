@@ -1,14 +1,14 @@
 import { FC } from 'react';
 import { ChevronProps } from './types';
 
-import styles from './Chevron.module.scss';
+import styles from './DropdownChevron.module.scss';
 
-const { container, chevron, chevronOpen } = styles;
+const { chevron, inner, innerOpen } = styles;
 
-const Chevron: FC<ChevronProps> = ({ isOpen }) => (
-  <div className={container}>
+const DropdownChevron: FC<ChevronProps> = ({ isOpen }) => (
+  <div className={chevron}>
     <svg
-      className={isOpen ? `${chevron} ${chevronOpen}` : chevron}
+      className={isOpen ? `${inner} ${innerOpen}` : inner}
       xmlns="http://www.w3.org/2000/svg"
       width="12"
       height="12"
@@ -23,4 +23,4 @@ const Chevron: FC<ChevronProps> = ({ isOpen }) => (
   </div>
 );
 
-export default Chevron;
+export default DropdownChevron;
